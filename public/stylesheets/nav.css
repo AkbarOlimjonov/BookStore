@@ -1,1 +1,236 @@
+.logo_tab{
+    display: none;
+}
 
+.logo{
+    font-size: 30px;
+    color: #70C05B;
+}
+
+header {
+    padding-top: 76px;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    width: 100%;
+    padding: 8px 0;
+    z-index: 9;
+}
+
+header nav .nav_left {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav_right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+header nav .nav_left .logo {
+    margin-right: 40.25px;
+}
+
+header nav .nav_left .btn-catalog {
+    background: #70C05B;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    padding-left: 10.5px;
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav_left .btn-catalog span {
+    display: inline-block;
+    width: 92px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 10.5px;
+}
+
+header nav .search {
+    margin-left: 16px;
+    position: relative;
+}
+
+header nav .search input {
+    background: #FFFFFF;
+    /* Main/Secondary */
+    border: 1px solid #70C05B;
+    border-radius: 4px;
+    width: 488px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8F8F8F;
+    padding-left: 16px;
+    padding-right: 42px;
+}
+
+header nav .search input:focus {
+    outline: none;
+}
+
+header nav .search .btn-search {
+    font-size: 16px;
+    color: #414141;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50%;
+    right: 13.5px;
+    transform: translateY(50%);
+}
+
+header nav .nav_right .icons {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav_right .icons li:first-child {
+    display: none;
+}
+
+header nav .nav_right .icons li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+    position: relative;
+}
+
+header nav .nav_right .icons li a span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #414141;
+    margin-top: 8.5px;
+}
+
+header nav .nav_right .icons li a small {
+    position: absolute;
+    width: 11.28px;
+    height: 11px;
+    left: calc(50% - 11.28px/2 + 5.5px);
+    top: -4px;
+    background: #FF6633;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 9px;
+}
+
+header nav .nav_right .user a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    padding-right: 21.5px;
+    margin-left: 8px;
+}
+
+header nav .nav_right .user a span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232323;
+    margin-right: 23.5px;
+    margin-left: 10px;
+    width: 85px;
+}
+
+
+
+@media (max-width: 991px) {
+    .content {
+        width: 736px;
+    }
+
+    .wrap_gap {
+        gap: 0 32px;
+    }
+
+    header {
+        padding-top: 72px;
+    }
+
+    header nav {
+        padding: 11px 0;
+    }
+
+    header nav .nav_left .logo .logo_desktop {
+        display: none;
+    }
+
+    header nav .nav_left .logo .logo_tab {
+        display: block;
+    }
+
+    header nav .nav_left {
+        padding-left: 4px;
+    }
+
+    header nav .nav_right {
+        padding-right: 4px;
+    }
+
+    header nav .nav_left .logo {
+        margin-right: 20px;
+    }
+
+    header nav .nav_left .btn-catalog span {
+        display: none;
+    }
+
+    header nav .search {
+        margin-left: 20px;
+    }
+
+    header nav .search input {
+        width: 325px;
+    }
+
+    header nav .nav_right .icons li a {
+        margin-right: 16px;
+    }
+
+    header nav .nav_right .user a {
+        margin-left: 0;
+    }
+
+    header nav .nav_right .user a span {
+        display: none;
+    }
+
+    header nav .nav_right .user a svg {
+        display: none;
+    }
+
+    header nav .nav_right .user a {
+        padding: 5px;
+    }
+
+    header .ads {
+        margin-top: 4px;
+        background-color: #FFFFFF;
+        background-image: url(../images/Group\ 7100.png);
+    }
+}
