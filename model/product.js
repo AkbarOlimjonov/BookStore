@@ -12,7 +12,17 @@ const productSchema = new Schema({
     categoryId:{
         type: Types.ObjectId,
         required: true
+    },
+    price: {
+        type: Number,
+        required:true
+    },
+    img: {
+        type: String,
+        required : true
     }
 })
+
+//635cfba157db9d331f4e54aa
 
 module.exports = model('product', productSchema)

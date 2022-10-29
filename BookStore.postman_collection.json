@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "7ae959ba-bc97-4456-babe-204192f9ed81",
+		"name": "BookStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Питер Ҳопкирк: Катта ўйин. Икки империя тўқнашуви",
+							"type": "default"
+						},
+						{
+							"key": "desc",
+							"value": "Марказий Осиёнинг бугунги харитасини чизиб берган «Катта ўйин\" ҳақида эшитганмисиз? Бу минтақадаги хонликларни ўзига вассал ва мустамлакага айлантириш учун икки қудратли империя - Чор Россияси ва Британия ўртасида кечган кураш \"Катта ўйин\"га асос бўлди.",
+							"type": "default"
+						},
+						{
+							"key": "img",
+							"value": "https://assets.asaxiy.uz/product/items/desktop/fc452d063a72e0824cacf90a32c3e3582022101718250210925lKUsokqUPj.jpg.webp",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "65000",
+							"type": "default"
+						},
+						{
+							"key": "categoryId",
+							"value": "635cfba157db9d331f4e54aa",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Жюль Верн: Капитан Грант болалари",
+							"type": "default"
+						},
+						{
+							"key": "desc",
+							"value": "Буюк француз ёзувчиси, замонавий фантастика отаси ҳали ҳаётлигидаёқ афсонага айланиб кетган инсонлардан бири эди. Замондошлари уни «тиним билмас саёҳатчи» деб ҳисобласалар, кимлардир уни «денгизчи, кема капитани» деб ўйлашар, яна кимлардир «кўчирмакаш ёзувчи» деб ғийбат қилар, бошқалар эса, «бунақа ёзувчи йўқ",
+							"type": "default"
+						},
+						{
+							"key": "img",
+							"value": "https://assets.asaxiy.uz/product/items/desktop/12e59a33dea1bf0630f46edfe13d6ea22022081211542846422cIdLcG1HvK.jpg.webp",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "60000",
+							"type": "default"
+						},
+						{
+							"key": "categoryId",
+							"value": "635d1091cc4ee8ff8cb16b50",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/update/635d07c2c1a9888e29d6e461",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"update",
+						"635d07c2c1a9888e29d6e461"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products/delete/635cfc5f9fd9eb95b3a60fc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"delete",
+						"635cfc5f9fd9eb95b3a60fc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products/635d01b4a4f47f8fbb049363",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"635d01b4a4f47f8fbb049363"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Programming Books\",\r\n    \"img\":\"https://assets.asaxiy.uz/product/main_image/desktop//626972ef8754f.jpg.webp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/categories/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Programming Books\",\r\n    \"img\":\"https://assets.asaxiy.uz/product/main_image/desktop//626972ef8754f.jpg.webp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/categories/update/635d1091cc4ee8ff8cb16b50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories",
+						"update",
+						"635d1091cc4ee8ff8cb16b50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/categories/delete/635d1091cc4ee8ff8cb16b50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories",
+						"delete",
+						"635d1091cc4ee8ff8cb16b50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/categories/635d1091cc4ee8ff8cb16b50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories",
+						"635d1091cc4ee8ff8cb16b50"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
